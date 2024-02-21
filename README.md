@@ -8,5 +8,5 @@ marco.negrete@ingenieria.unam.edu
 ### TMR 2024
 https://femexrobotica.org/tmr2024/automodelcar/
 
-### Libro de reglas
+### Libro de reglas 2024
 https://github.com/FemexRobotica/AutoModelCar-Presencial/blob/main/Rulebook/Rulebook.pdf
