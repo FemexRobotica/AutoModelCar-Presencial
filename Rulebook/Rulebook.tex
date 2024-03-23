@@ -1,5 +1,5 @@
 \documentclass[letterpaper,12pt]{article}
-\usepackage[top=3.0cm, bottom=3.0cm, left=3.0cm, right=3.0cm]{geometry}
+\usepackage[top=3.0cm, bottom=3.0cm, left=3cm, right=3cm]{geometry}
 \usepackage[spanish]{babel}
 \spanishdecimal{.}
 \selectlanguage{spanish}
@@ -52,7 +52,7 @@ Se permite el uso tanto de vehículos AutoNOMOS, en cualquiera de sus versiones,
 \item \textbf{Importante. } El vehículo debe ser una representación a escala 1:10 de un vehículo real. La forma a utilizar (sedán, hatchback, SUV, entre otros) es elección del equipo. No se permitirán vehículos que no cumplan con esta característica, como por ejemplo, bases móviles diferenciales u omnidireccionales.
 \item Es obligatorio el uso de una cubierta o carcasa de modo que la apariencia del vehículo a escala sea similar a la de un vehículo real. No se permitirán vehículos sin carcasa.
 \item Se puede utilizar cualquier tipo de sensor, pero todos los dispositivos deben estar montados en el robot dentro de la carcasa.
-\item La única excepción a la regla anterior es el uso de cámaras o sensores similares montados sobre el toldo del vehículo (ver ejemplo de AutoNOMOS).
+\item La única excepción a la regla anterior es el uso de cámaras o sensores similares montados sobre el toldo del vehículo (ver ejemplo de AutoNOMOS), sin embargo, estos sensores no deben estar fuera de las dimensiones máximas. 
 \item \textbf{Importante.} El tamaño máximo deberá ser de \textbf{45 cm largo X 35 cm ancho X 45 cm alto}. Las dimensiones máximas se determinaron para ser consistentes con la competencia FIRA Autonomous Cars (\url{https://firaworldcup.org/leagues/fira-challenges/autonomous-cars/}). Aunque estas son las dimensiones máximas, se debe respetar el punto 2. 
 \item Se permite el uso de procesamiento externo siempre y cuando la comunicación sea inalámbrica. Bajo ninguna circunstancia se permitirá comunicación cableada. El procesamiento externo debe ser solo una ayuda en la conducción autónoma por lo que bajo ninguna circunstancia se permitirá la teleoperación durante una prueba.
 \item El comité local y la FMR no proveen infraestructura para el procesamiento externo por lo que los dispositivos requeridos y la comunicación inalámbrica serán completamente responsabilidad del equipo.
@@ -145,7 +145,7 @@ Existen cuatro pruebas en el mismo circuito que implican diferentes niveles de d
 \end{enumerate}
 \begin{figure}
   \centering
-  \includegraphics[width=0.15\textwidth]{Figures/alto.png}
+  \includegraphics[width=0.17\textwidth]{Figures/alto.png}
   \caption{Ejemplo de señal de alto.}
   \label{fig:stopsign}
 \end{figure}
@@ -188,6 +188,21 @@ Se otorgarán puntos por cada una de las pruebas de acuerdo a la posición ocupa
   \label{tab:Scoring}
 \end{table}
 
+\subsection{Recompensas}
+\label{sec:bonuses}
+A continuación se detalla la lista de causas y recompensas en tiempo:
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|p{0.65\textwidth}|p{0.3\textwidth}|}
+    \hline
+    $\qquad\qquad$Causa & Recompensa\\
+    \hline
+    Encender las luces intermintentes al detenerse junto a la señal de alto. & 5 segundos\\
+    \hline
+  \end{tabular}
+  \caption{Recompensas de tiempo}
+  \label{tab:bonuses}
+\end{table}
 
 \subsection{Sanciones}
 \label{sec:penalties}
@@ -221,21 +236,6 @@ A continuación se detalla la lista de causas y penalizaciones en tiempo y dista
   \label{tab:Penalties}
 \end{table}
 
-\subsection{Recompensas}
-\label{sec:bonuses}
-A continuación se detalla la lista de causas y recompensas en tiempo:
-\begin{table}[h!]
-  \centering
-  \begin{tabular}{|p{0.65\textwidth}|p{0.3\textwidth}|}
-    \hline
-    $\qquad\qquad$Causa & Recompensa\\
-    \hline
-    Encender las luces intermintentes al detenerse junto a la señal de alto. & 5 segundos\\
-    \hline
-  \end{tabular}
-  \caption{Recompensas de tiempo}
-  \label{tab:bonuses}
-\end{table}
 
 \subsection{Puntuación Final}
 \label{sec:final_score}
