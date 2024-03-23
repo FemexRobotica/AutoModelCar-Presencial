@@ -1,5 +1,5 @@
-# IMPORTANTE
-Se han iniciado las discusiones para cambios menores al reglamento para la competencia de 2024. Si quieres ser incluido en la lista de correos, por favor manda un correo a marco.negrete@ingenieria.unam.edu
+# Nota
+El libro de reglas aquí publicado incluye los cambios discutidos con los equipos para la edición 2024.
 
 # AutoModelCar-Presencial
 Reglas, software y documentación relativa a la modalidad presencial de la categoría AutoModelCar del Torneo Mexicano de Robótica. 
