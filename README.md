@@ -1,3 +1,6 @@
+# Resultados Prueba de Detección de Señales de Tránsito
+https://github.com/FemexRobotica/AutoModelCar-Presencial/blob/main/ResultadosDeteccionSe%C3%B1alesDeTransito.pdf
+
 # Nota
 El libro de reglas aquí publicado incluye los cambios discutidos con los equipos para la edición 2024.
 
