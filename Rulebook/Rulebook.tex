@@ -6,6 +6,7 @@
 \usepackage[spanish,onelanguage,ruled]{algorithm2e}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{hyperref}
@@ -38,7 +39,7 @@ Los antecedentes directos del presente libro de reglas son el evento realizado e
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Sobre los vehículos}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.75\textwidth]{Figures/coverpic.jpg}
   \caption{El vehículo AutoNOMOS}
@@ -53,8 +54,8 @@ Se permite el uso tanto de vehículos AutoNOMOS, en cualquiera de sus versiones,
 \item Es obligatorio el uso de una cubierta o carcasa de modo que la apariencia del vehículo a escala sea similar a la de un vehículo real. No se permitirán vehículos sin carcasa.
 \item Se puede utilizar cualquier tipo de sensor, pero todos los dispositivos deben estar montados en el robot dentro de la carcasa.
 \item La única excepción a la regla anterior es el uso de cámaras o sensores similares montados sobre el toldo del vehículo (ver ejemplo de AutoNOMOS), sin embargo, estos sensores no deben estar fuera de las dimensiones máximas. 
-\item \textbf{Importante.} El tamaño máximo deberá ser de \textbf{45 cm largo X 35 cm ancho X 45 cm alto}. Las dimensiones máximas se determinaron para ser consistentes con la competencia FIRA Autonomous Cars (\url{https://firaworldcup.org/leagues/fira-challenges/autonomous-cars/}). Aunque estas son las dimensiones máximas, se debe respetar el punto 2. 
-\item Se permite el uso de procesamiento externo siempre y cuando la comunicación sea inalámbrica. Bajo ninguna circunstancia se permitirá comunicación cableada. El procesamiento externo debe ser solo una ayuda en la conducción autónoma por lo que bajo ninguna circunstancia se permitirá la teleoperación durante una prueba.
+\item \textbf{Importante.} El tamaño máximo deberá ser de \textbf{60 cm largo X 25 cm ancho X 25 cm alto en toldo con un máximo de 45 cm en sensores}. Las dimensiones máximas se determinaron para ser consistentes con la competencia FIRA Autonomous Cars (\url{https://firaworldcup.org/leagues/fira-challenges/autonomous-cars/}). Aunque estas son las dimensiones máximas, se debe respetar el punto 2. 
+
 \item El comité local y la FMR no proveen infraestructura para el procesamiento externo por lo que los dispositivos requeridos y la comunicación inalámbrica serán completamente responsabilidad del equipo.
 \end{enumerate}
 Los vehículos deben cumplir con todas las restricciones anteriores. \textbf{Si un punto no se cumple, el equipo no podrá participar}.
@@ -63,7 +64,7 @@ Los vehículos deben cumplir con todas las restricciones anteriores. \textbf{Si 
 
 Las especificaciones de los vehículos AutoNOMOS, en sus versiones 1, 2 y 3 desarrollados por el equipo del Prof. Raúl Rojas en la Freie Universität Berlin, se describen en la siguiente liga:
 \url{https://github.com/AutoModelCar/AutoModelCarWiki/wiki}
-La figura \ref{fig:AutoNOMOS} muestra el aspecto externo de estos vehículos. En ediciones anteriores no se permitían modificaciones de ningún tipo al hardware de estos vehículos, sin embargo, en esta edición del TMR se permitirá cualquier modificación siempre y cuando el vehículo resultante \textbf{no exceda los 45x35x45 cm (largo, ancho y alto)} y las proporciones se mantengan en un margen razonable, \textbf{considerando que los vehículos deben representar autos reales a escala. }
+La figura \ref{fig:AutoNOMOS} muestra el aspecto externo de estos vehículos. En ediciones anteriores no se permitían modificaciones de ningún tipo al hardware de estos vehículos; sin embargo, en esta edición del TMR se permitirá cualquier modificación siempre y cuando el vehículo resultante \textbf{no exceda los 45x25x25 cm (largo, ancho y alto)}. Además, los sensores externos como lo son camaras no deberan exceder los 45 cm de altura y las proporciones se mantengan en un margen razonable, \textbf{considerando que los vehículos deben representar autos reales a escala. }
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -73,7 +74,7 @@ La figura \ref{fig:AutoNOMOS} muestra el aspecto externo de estos vehículos. En
 \subsection{Pista de pruebas}
 El desarrollo de las pruebas de conducción autónoma se realiza sobre una superficie de rodamiento consistente en una carpeta de material plástico artificial de 12 x 8 m, de color negro. Debe anticiparse cierto nivel de brillo o reflexión de la superficie de competencia. Sobre la carpeta plástica se definen las líneas blancas correspondientes a los carriles que se muestran mediante impresión o cinta plastificada (de aislar). En la figura \ref{fig:Arena} se muestra un ejemplo de circuito, con las especificaciones de anchos de carril, radios externos e internos de las curvas. El circuito que se use en la competencia podrá tener variaciones con respecto a esta descripción.
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{Figures/pista.png}
   \caption{Ejemplo de la pista de pruebas}
@@ -84,9 +85,9 @@ En el ejemplo anterior, el circuito posee dos intersecciones en la parte central
 
 \subsection{Zona de estacionamiento}
 Asimismo, habrá una zona en la pista para las pruebas de estacionamiento \textbf{en batería}, como se ilustra en la figura \ref{fig:Parking}. La banqueta será delimitada por “paredes” con altura suficiente para que pueda ser detectada por los sensores del robot. El espacio para estacionarse estará delimitado por otros vehículos y no solo por paredes. Para este fin, se utilizarán los vehículos de otros equipos.
-\begin{figure}
+\begin{figure}[H]
   \centering
-  \includegraphics[width=0.9\textwidth]{Figures/Parking.pdf}
+  \includegraphics[width=0.9\textwidth]{Figures/Parking.png}
   \caption{Zona de estacionamiento}
   \label{fig:Parking}
 \end{figure}
@@ -99,6 +100,7 @@ En cuanto a los obstáculos, se utilizarán los vehículos a escala de otros equ
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%% REGLAS %%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Reglas}
 
 Todas las pruebas se llevarán a cabo dentro de la pista bajo las siguientes reglas:
@@ -129,6 +131,11 @@ Todas las pruebas se llevarán a cabo dentro de la pista bajo las siguientes reg
 \item Los equipos deberán llevar cargadas sus baterías al momento de ejecutar una prueba, esto es, no debe haber equipo de recarga de baterías al momento de efectuar la prueba y aquellas baterías cargadas que no se utilicen durante la misma deberán ser almacenadas en bolsas de seguridad de acuerdo al tipo de batería.
 
 \item Queda estrictamente prohibido realizar pruebas fuera de la pista a excepción de aquellas realizadas por los equipos en sus mesas de trabajo y bajo su propia responsabilidad. Antes de la competencia se tendrán tiempos asignados para que los equipos realicen sesiones de prueba, por lo que durante la competencia a excepción del equipo participante en turno, los equipos en la lista de espera para entrar a la arena no podrán encender cualquier tipo de aparato que pueda causar interferencia en las comunicaciónes del resto de autos que se encuentran compitiendo dentro de la arena.
+
+\item Al inicio de cada prueba, todos los equipos deberán colocar sus vehículos en las zonas designadas por la organización. Una vez colocados, no se permitirá ningún tipo de manipulación física sobre los vehículos hasta que haya finalizado la prueba y se autorice su retiro.
+
+Además, los vehículos solo podrán ser utilizados cuando sea el turno oficial de su respectivo equipo en la competencia. Cualquier uso del vehículo fuera de su turno será motivo de sanción.
+
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -138,19 +145,23 @@ Todas las pruebas se llevarán a cabo dentro de la pista bajo las siguientes reg
 Existen cuatro pruebas en el mismo circuito que implican diferentes niveles de dificultad:
 
 \begin{enumerate}
-\item \textbf{Reconocimiento de señales de tránsito.} Consiste en cubrir el circuito de inicio a fin sin abandonar el carril correspondiente. En algún punto de la pista, seleccionado aleatoriamente de un conjunto predefinido de puntos, se colocará una señal de alto. El vehículo debe detenerse por completo junto a la señal de alto y después continuar con el recorrido del circuito. La figura \ref{fig:stopsign} muestra un ejemplo de la señal a utilizar. 
-\item \textbf{Navegación Autónoma con Obstáculos.} Consiste en cubrir el circuito con tres obstáculos estáticos en la pista. Estos obstáculos serán los vehículos de otros equipos colocados aleatoriamente a lo largo del circuito.
-\item \textbf{Navegación Autónoma con Obstáculos en Movimiento.} Consiste en cubrir el circuito con dos obstáculos estáticos y uno móvil. El vehículo del equipo participante deberá ejecutar una maniobra de rebase en esta prueba. El obstáculo se moverá a una velocidad suficientemente baja para que el vehículo participante pueda ejecutar el rebase. Los otros dos obstáculos estarán colocados aleatoriamente a lo largo del circuito.
-  \item \textbf{Estacionamiento Autónomo.} Consiste en hacer que el vehículo pueda estacionarse en la zona designada (ver figura \ref{fig:Parking}). Se arrancará el vehículo a un metro de distancia, aproximadamente, del espacio para estacionarse. Esta posición inicial estará sobre el carril de circulación. La posición y orientación inicial tendrán una ligera variación aleatoria para todos los equipos. El vehículo podrá utilizar todo el espacio y maniobras necesarias para estacionarse. 
+\item \textbf{Reconocimiento de señales de tránsito.} Consiste en cubrir el circuito de inicio a fin sin abandonar el carril correspondiente. En un intervalo aleatorio en los ultimos tres metros de la primera recta, se colocará una señal de alto. El vehículo debe detenerse por completo junto a la señal a no mas de 30 cm durante cinco segundos y después continuar con el recorrido del circuito; de no hacerlo, la prueba cuenta como fallida y no hay puntos. La figura \ref{fig:stopsign} muestra un ejemplo de la señal a utilizar. 
+\item \textbf{Navegación Autónoma con Obstáculos.} Consiste en cubrir el circuito con tres obstáculos estáticos en la pista. Estos obstáculos serán los vehículos de otros equipos colocados aleatoriamente a lo largo del circuito. De manera aleatoria, un vehículo sera posicionado en contraflujo a un costado de un obstaculo estático. Un operador moverá el vehículo en contraflujo cuando el participante se aproxime a ejecutar la maniobra de rebase.
+\item \textbf{Navegación Autónoma con Obstáculos en Movimiento.} Consiste en cubrir el circuito con un obstáculo estático y dos móviles. El vehículo del equipo participante deberá ejecutar una maniobra de rebase en esta prueba. Los obstáculo se moverán a una velocidad suficientemente baja para que el vehículo participante pueda ejecutar el rebase. Un obstaculo dinamico se encontrará en la primera recta y el segundo en una curva. El obstáculo  estático estará colocado aleatoriamente a lo largo del circuito.
+\item \textbf{Estacionamiento Autónomo.} Consiste en hacer que el vehículo pueda estacionarse en la zona designada (ver figura \ref{fig:Parking}). Se arrancará el vehículo a un metro de distancia, aproximadamente, del espacio para estacionarse. Esta posición inicial estará sobre el carril de circulación. La posición y orientación inicial tendrán una ligera variación aleatoria para todos los equipos. El vehículo podrá utilizar todo el espacio y maniobras necesarias para estacionarse. 
 \end{enumerate}
-\begin{figure}
+
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.17\textwidth]{Figures/alto.png}
   \caption{Ejemplo de señal de alto.}
   \label{fig:stopsign}
 \end{figure}
 
-Cada equipo tendrá 5 minutos por intento para cada prueba. Durante este tiempo, el equipo participante podrá solicitar máximo 1 reinicio, para lo cual no se detendrá el cronómetro. Si el equipo no se encuentra listo al momento de que le corresponda efectuar la prueba, la misma se dará por concluida sin puntos y pierde su turno. Los equipos en la cola de espera deben estar listos para participar inmediatamente en cuanto les toque su turno. El orden de participación se realizará en forma aleatoria al inicio del concurso y éste debe ser respetado. Cada equipo debe participar en el turno que le corresponde.
+Cada equipo dispondrá de 15 minutos para realizar sus pruebas. Durante este periodo, el equipo podrá efectuar múltiples intentos; sin embargo, deberá anunciar previamente cuál intento desea que sea considerado para puntuación, hasta un máximo de tres intentos válidos.   
+Al finalizar, se calculará la puntuación final tomando el promedio de los dos mejores intentos válidos registrados dentro del tiempo asignado.
+ 
+
 
 \subsection{Presentación del póster}
 Consiste en presentar un póster con la descripción del equipo, características del hardware, descripción de los métodos utilizados, resultados obtenidos y demás información que el equipo considere relevante. El cartel deberá tener un tamaño A1 y deberá ser presentado en el lugar y hora que el comité organizador designe al principio de la competencia.\textbf{La presentación del póster no otorga puntos pero es obligatoria para la participación en las demás pruebas}.
@@ -271,10 +282,16 @@ Si el empate persiste después de aplicar los criterios anteriores, se acreditar
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% CONTACTO %%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Contacto}
+
+\noindent
+\begin{minipage}{\linewidth}
 Cualquier duda o aclaración favor de dirigirla vía email a:
 
-Dr. Marco Negrete\\ \texttt{marco.negrete@ingenieria.unam.edu}
+Dr. Javier Saldivar Pérez\\
+\texttt{javier.saldivarp@uaz.edu.mx}
+\end{minipage}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
