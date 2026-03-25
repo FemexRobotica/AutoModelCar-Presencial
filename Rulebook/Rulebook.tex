@@ -22,7 +22,7 @@
 \pdfminorversion=7
 \title{Categoría AutoModelCar\\Torneo Mexicano de Robótica}
 \author{Libro de Reglas, modalidad Presencial}
-\date{Ciudad de México, 2025}
+\date{Puebla, 2026}
 \begin{document}
 \renewcommand{\tablename}{Tabla}
 \maketitle
@@ -53,7 +53,7 @@ Se permite el uso tanto de vehículos AutoNOMOS, en cualquiera de sus versiones,
 \item \textbf{Importante. } El vehículo debe ser una representación a escala 1:10 de un vehículo real. La forma a utilizar (sedán, hatchback, SUV, entre otros) es elección del equipo. No se permitirán vehículos que no cumplan con esta característica, como por ejemplo, bases móviles diferenciales u omnidireccionales.
 \item Es obligatorio el uso de una cubierta o carcasa de modo que la apariencia del vehículo a escala sea similar a la de un vehículo real. No se permitirán vehículos sin carcasa.
 \item Se puede utilizar cualquier tipo de sensor, pero todos los dispositivos deben estar montados en el robot dentro de la carcasa.
-\item La única excepción a la regla anterior es el uso de cámaras o sensores similares montados sobre el toldo del vehículo (ver ejemplo de AutoNOMOS), sin embargo, estos sensores no deben estar fuera de las dimensiones máximas. 
+\item La única excepción a la regla anterior aplica exclusivamente para el uso de cámaras y sensores basados en visión, tales como cámaras RGB, cámaras estereoscópicas o cámaras de profundidad, los cuales podrán instalarse sobre el toldo del vehículo (ver ejemplo de AutoNOMOS). No obstante, estos dispositivos deberán mantenerse dentro de las dimensiones máximas permitidas del vehículo, sin excederlas en ningún caso. 
 \item \textbf{Importante.} El tamaño máximo deberá ser de \textbf{60 cm largo X 25 cm ancho X 25 cm alto en toldo con un máximo de 45 cm en sensores}. Las dimensiones máximas se determinaron para ser consistentes con la competencia FIRA Autonomous Cars (\url{https://firaworldcup.org/leagues/fira-challenges/autonomous-cars/}). Aunque estas son las dimensiones máximas, se debe respetar el punto 2. 
 
 \item El comité local y la FMR no proveen infraestructura para el procesamiento externo por lo que los dispositivos requeridos y la comunicación inalámbrica serán completamente responsabilidad del equipo.
@@ -145,23 +145,29 @@ Además, los vehículos solo podrán ser utilizados cuando sea el turno oficial 
 Existen cuatro pruebas en el mismo circuito que implican diferentes niveles de dificultad:
 
 \begin{enumerate}
-\item \textbf{Reconocimiento de señales de tránsito.} Consiste en cubrir el circuito de inicio a fin sin abandonar el carril correspondiente. En un intervalo aleatorio en los ultimos tres metros de la primera recta, se colocará una señal de alto. El vehículo debe detenerse por completo junto a la señal a no mas de 30 cm durante cinco segundos y después continuar con el recorrido del circuito; de no hacerlo, la prueba cuenta como fallida y no hay puntos. La figura \ref{fig:stopsign} muestra un ejemplo de la señal a utilizar. 
+\item \textbf{Reconocimiento de señales de tránsito.} Consiste en cubrir el circuito de inicio a fin sin abandonar el carril correspondiente. La prueba podrá iniciar de manera aleatoria, ya sea en el carril interno o en el carril externo del circuito.
+
+A lo largo del recorrido se colocarán de manera aleatoria un total de 10 elementos, correspondientes a 5 señalamientos de tránsito y 5 cruces peatonales, distribuidos en distintas secciones del circuito.
+
+El vehículo deberá detectar y responder correctamente a cada uno de estos elementos. En el caso de las señales de alto y cruces peatonales, deberá detenerse completamente a una distancia no mayor a 30 cm durante al menos cinco segundos antes de continuar su marcha.
+
+Para que la prueba sea considerada como aprobada, el vehículo deberá cumplir correctamente con al menos 3 elementos de cada tipo (3 señalamientos y 3 cruces peatonales). En caso contrario, la prueba se considerará fallida y no se otorgarán puntos.
 \item \textbf{Navegación Autónoma con Obstáculos.} Consiste en cubrir el circuito con tres obstáculos estáticos en la pista. Estos obstáculos serán los vehículos de otros equipos colocados aleatoriamente a lo largo del circuito. De manera aleatoria, un vehículo sera posicionado en contraflujo a un costado de un obstaculo estático. Un operador moverá el vehículo en contraflujo cuando el participante se aproxime a ejecutar la maniobra de rebase.
 \item \textbf{Navegación Autónoma con Obstáculos en Movimiento.} Consiste en cubrir el circuito con un obstáculo estático y dos móviles. El vehículo del equipo participante deberá ejecutar una maniobra de rebase en esta prueba. Los obstáculo se moverán a una velocidad suficientemente baja para que el vehículo participante pueda ejecutar el rebase. Un obstaculo dinamico se encontrará en la primera recta y el segundo en una curva. El obstáculo  estático estará colocado aleatoriamente a lo largo del circuito.
 \item \textbf{Estacionamiento Autónomo.} Consiste en hacer que el vehículo pueda estacionarse en la zona designada (ver figura \ref{fig:Parking}). Se arrancará el vehículo a un metro de distancia, aproximadamente, del espacio para estacionarse. Esta posición inicial estará sobre el carril de circulación. La posición y orientación inicial tendrán una ligera variación aleatoria para todos los equipos. El vehículo podrá utilizar todo el espacio y maniobras necesarias para estacionarse. 
 \end{enumerate}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.17\textwidth]{Figures/alto.png}
-  \caption{Ejemplo de señal de alto.}
-  \label{fig:stopsign}
-\end{figure}
+
 
 Cada equipo dispondrá de 15 minutos para realizar sus pruebas. Durante este periodo, el equipo podrá efectuar múltiples intentos; sin embargo, deberá anunciar previamente cuál intento desea que sea considerado para puntuación, hasta un máximo de tres intentos válidos.   
 Al finalizar, se calculará la puntuación final tomando el promedio de los dos mejores intentos válidos registrados dentro del tiempo asignado.
  
-
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.10\textwidth]{Figures/alto.png}
+  \caption{Ejemplo de señal de alto.}
+  \label{fig:stopsign}
+\end{figure}
 
 \subsection{Presentación del póster}
 Consiste en presentar un póster con la descripción del equipo, características del hardware, descripción de los métodos utilizados, resultados obtenidos y demás información que el equipo considere relevante. El cartel deberá tener un tamaño A1 y deberá ser presentado en el lugar y hora que el comité organizador designe al principio de la competencia.\textbf{La presentación del póster no otorga puntos pero es obligatoria para la participación en las demás pruebas}.
