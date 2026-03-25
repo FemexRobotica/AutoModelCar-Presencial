@@ -7,11 +7,11 @@ Reglas, software y documentación relativa a la modalidad presencial de la categ
 El libro de reglas aquí publicado incluirá los cambios a discutir con los equipos para la edición 2025.
 
 ### Responsable Técnico
-Dr. Marco Antonio Negrete Villanueva<br>
-marco.negrete@ingenieria.unam.edu
+Dr. Javier Saldivar Pérez<br>
+javier.saldivarp@uaz.edu.mx
 
 ### TMR 2025
-https://femexrobotica.org/tmr2025/automodelcar/
+https://femexrobotica.org/tmr2026/index.php/categorias/categorias-fmr/automodelcar/
 
-### Libro de reglas 2025
+### Libro de reglas 2026
 https://github.com/FemexRobotica/AutoModelCar-Presencial/blob/TMR2025/Rulebook/Rulebook.pdf
