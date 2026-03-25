@@ -10,8 +10,11 @@ El libro de reglas aquí publicado incluirá los cambios a discutir con los equi
 Dr. Javier Saldivar Pérez<br>
 javier.saldivarp@uaz.edu.mx
 
-### TMR 2025
+### TMR 2026
 https://femexrobotica.org/tmr2026/index.php/categorias/categorias-fmr/automodelcar/
 
 ### Libro de reglas 2026
 https://github.com/FemexRobotica/AutoModelCar-Presencial/blob/TMR2025/Rulebook/Rulebook.pdf
+
+### Señal de Stop
+https://github.com/FemexRobotica/AutoModelCar-Presencial/tree/TMR2025/Signal
